@@ -1,0 +1,34 @@
+GET http://localhost:5083/games/3
+
+###
+GET http://localhost:5083/games
+
+###Post
+POST http://localhost:5083/games
+Content-Type: application/json
+
+{
+    "Name":"Test game",
+    "GenreId":"2",
+    "Price":"59",
+    "releaseDate":"2024-10-12"
+}
+
+###PUT
+PUT http://localhost:5083/games/2
+Content-Type: application/json
+
+{
+ "Name":"Shadow Fight",
+    "GenreId":"2",
+    "Price":"150",
+    "releaseDate":"2024-10-12"
+}
+
+###Delete
+DELETE http://localhost:5083/games/3
+
+
+### Genre
+GET  http://localhost:5083/genre
+
